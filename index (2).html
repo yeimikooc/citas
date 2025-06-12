@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Citas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Agenda de Citas</h1>
+  <form id="formCita">
+    <input type="text" id="nombre" placeholder="Nombre del Cliente" required>
+    <input type="datetime-local" id="fechaHora" required>
+    <input type="text" id="motivo" placeholder="Motivo" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="tel" id="telefono" placeholder="Teléfono" required>
+    <button type="submit">Guardar</button>
+  </form>
+
+  <div id="listaCitas"></div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
